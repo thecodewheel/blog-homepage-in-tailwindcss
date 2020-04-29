@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "cw-grey-050" : "F0F4FB",
+        "cw-grey-050": "#F0F4FB",
         "cw-grey-100": "#D9E2EC",
         "cw-grey-700": "#334E68",
         "cw-grey-800": "#243B53",
@@ -10,6 +10,8 @@ module.exports = {
         "cw-blue-300": "#62B0E8",
         "cw-blue-400": "#4098D7",
         "cw-blue-600": "#186FAF",
+        "twitter-blue": "#00acee",
+        "facebook-blue": "#3b5998",
       },
       fontFamily: {
       'roboto' :['Roboto', 'sans-serif'],
