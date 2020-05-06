@@ -16,27 +16,50 @@
                 <img src="images/codewheel-logo.svg" alt="Codewheel Logo" />
                 <span class="font-bold font-work-sans text-2xl text-cw-blue-400">Codewheel</span>
             </a>
-            <ul class="flex">
+            <ul class="hidden md:flex">
                 <li class="mr-10"><a href="#" class="hover:cw-blue-600 hover:underline">Home</a></li>
                 <li class="mr-10"><a href="#" class="hover:cw-blue-600 hover:underline">Travel</a></li>
                 <li class="mr-10"><a href="#" class="hover:cw-blue-600 hover:underline">Music</a></li>
                 <li class="mr-10"><a href="#" class="hover:cw-blue-600 hover:underline">Technology</a></li>
                 <li><a href="#" class="hover:cw-blue-600 hover:underline">Business</a></li>
             </ul>
+            <div class="block md:hidden">
+                <button class="w-6 h-6 hover:text-cw-blue-600 menuBtn-js">
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <button class="hidden w-6 h-6 hover:text-cw-blue-600 closeBtn-js">
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div><!-- .block md:hidden -->
         </div>
     </header>
+    <div class="md:hidden">
+        <nav class="hidden navMenu-js container mx-auto max-w-6xl px-5">
+            <ul>
+                <li><a href="#" class="text-cw-blue-600 hover:text-cw-grey-050 hover:bg-cw-blue-600 block p-3">Home</a></li>
+                <li><a href="#" class="text-cw-blue-600 hover:text-cw-grey-050 hover:bg-cw-blue-600 block p-3">Travel</a></li>
+                <li><a href="#" class="text-cw-blue-600 hover:text-cw-grey-050 hover:bg-cw-blue-600 block p-3">Music</a></li>
+                <li><a href="#" class="text-cw-blue-600 hover:text-cw-grey-050 hover:bg-cw-blue-600 block p-3">Technology</a></li>
+                <li><a href="#" class="text-cw-blue-600 hover:text-cw-grey-050 hover:bg-cw-blue-600 block p-3">Business</a></li>
+            </ul>
+        </nav>
+    </div>
     <main class="container mx-auto max-w-6xl px-5">
-        <article class="border-t border-cw-grey-100 flex justify-between py-10">
-            <a href="#" class="w-1/2 mr-12">
+        <article class="border-t border-cw-grey-100 flex justify-between py-10 flex-col md:flex-row">
+            <a href="#" class="md:w-1/2 md:mr-12">
                 <img src="images/backpack.png" alt="Backpacker outside by sea" class="border-sm" />
             </a>
-            <div class="w-1/2 mt-4">
+            <div class="md:w-1/2 mt-4">
                 <a href="#" class="text-cw-blue-300 hover:text-cw-blue-600 hover:underline text-sm mb-1 block">Travel</a>
                 <h1 class=" mb-3"><a href="#" class="font-bold font-work-sans text-3xl text-cw-grey-800 leading-tight hover:text-cw-blue-600 hover:underline">Backbacking planning tips for the summer</a></h1>
                 <p class="leading-relaxed">Lorem ipsum dolor sit amet, fugit persius inermis eos ad, eu oblique tacimates qui. Vim quodsi fabellas rationibus ei, imperdiet appellantur eum ne, consetetur intellegam usu an. Has eu disputationi comprehensam vituperatoribus. Pri quod brute urbanitas ex, omnes offendit mei ut. Id quodsi atomorum definitiones est.</p>
             </div>
         </article>
-        <div class="mt-4 grid grid-cols-3 gap-8 row-gap-6 pb-10">
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 row-gap-6 pb-10">
             <article>
                 <a href="#">
                     <img src="images/whiteboard.png" alt="whiteboard meeting" class="mb-2" />
@@ -76,28 +99,28 @@
                 <p class="text-sm leading-relaxed">Lorem ipsum dolor sit amet, fugit persius inermis eos ad, eu oblique tacimates qui. Vim quodsi fabellas rationibus...</p>
             </article>
         </div><!-- .mt-4 grid grid-cols-3 -->
-        <section class="flex justify-between pb-10">
-            <div class="w-1/2 mr-10">
+        <section class="flex flex-col md:flex-row justify-between pb-10 border-t border-cw-grey-100 pt-10 md:border-none md:pt-0">
+            <div class="md:w-1/2 md:mr-10 mb-6 md:mb-0">
                 <a href="#" class="mb-2 block"><img class="rounded-sm" src="images/making-notes.png" alt="Person making notes by a laptop" /> </a>
                 <h3 class="mb-1"><a href="#" class="text-lg font-bold text-cw-grey-800 font-bold font-work-sans leading-tight hover:text-cw-blue-600 hover:underline">Join our online digital university</a> </h3>
-                <p class="leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque quam eos, quaerat adipisci doloremque, necessitatibus odit mollitia ipsum aut fugit dignissimos velit nesciunt animi hic aspernatur obcaecati cumque optio ducimus.</p>
+                <p class="leading-relaxed">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
             </div>
-            <div class="w-1/2">
+            <div class=" md:w-1/2">
                 <a href="#" class="mb-2 block"><img class="rounded-sm" src="images/focus-on-laptop.png" alt="Male is focus on his laptop" /> </a>
                 <h3 class="mb-1"><a href="#" class="text-lg font-bold text-cw-grey-800 font-bold font-work-sans leading-tight hover:text-cw-blue-600 hover:underline">This month webinar all your tax questions</a> </h3>
-                <p class="leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque quam eos, quaerat adipisci doloremque, necessitatibus odit mollitia ipsum aut fugit dignissimos velit nesciunt animi hic aspernatur obcaecati.</p>
+                <p class="leading-relaxed">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
             </div>
         </section>
     </main>
     <footer>
         <div class="bg-cw-grey-050 py-10 mb-10">
-            <div class="container mx-auto max-w-6xl px-5 flex justify-between ">
-                <div class="w-1/2">
+            <div class="container mx-auto max-w-6xl px-5 flex flex-col md:flex-row justify-between ">
+                <div class="md:w-1/2">
                     <h3 class="text-2xl font-bold font-work-sans text-cw-grey-900 mb-3">Sign up to stay up to date on all our courses</h3>
                     <p class="text-lg w-11/12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque quam eos, quaerat adipisci doloremque, necessitatibus odit mollitia.</p>
                 </div><!-- .w-1/2 -->
 
-                <form action="#" class="flex align-center self-center">
+                <form action="#" class="flex md:align-center md:self-center py-3 md:py-0">
                     <label for="email" class="sr-only">Enter your email</label>
                     <input class="placeholder-cw-grey-700 h-12 px-2 w-64" type="email" name="email" id="email" placeholder="Enter your email" />
                     <button class="bg-cw-blue-400 hover:bg-cw-blue-600 w-12 h-12">
@@ -108,16 +131,16 @@
                 </form>
             </div><!-- .container mx-auto max-w-6xl px-5-->
         </div>
-        <div class="container mx-auto max-w-6xl px-5 flex justify-between pb-10">
-            <ul class="flex">
-                <li class="mr-10"><a href="#" class="text-cw-grey-800 font-bold hover:text-cw-blue-600 hover:underline">&copy;Codewheel</a></li>
-                <li class="mr-10"><a href="#" class="text-cw-grey-800 font-bold hover:text-cw-blue-600 hover:underline">Home</a></li>
-                <li class="mr-10"><a href="#" class="text-cw-grey-800 font-bold hover:text-cw-blue-600 hover:underline">Travel</a></li>
-                <li class="mr-10"><a href="#" class="text-cw-grey-800 font-bold hover:text-cw-blue-600 hover:underline">Music</a></li>
-                <li class="mr-10"><a href="#" class="text-cw-grey-800 font-bold hover:text-cw-blue-600 hover:underline">Technology</a></li>
-                <li class="mr-10"><a href="#" class="text-cw-grey-800 font-bold hover:text-cw-blue-600 hover:underline">Business</a></li>
+        <div class="container mx-auto max-w-6xl px-5 flex flex-col md:flex-row justify-between pb-10">
+            <ul class="flex flex-col md:flex-row">
+                <li class="mr-10"><a href="#" class="text-cw-grey-800 font-bold hover:text-cw-blue-600 hover:underline py-2 md:py-0 inline-block">&copy;Codewheel</a></li>
+                <li class="mr-10"><a href="#" class="text-cw-grey-800 font-bold hover:text-cw-blue-600 hover:underline py-2 md:py-0 inline-block">Home</a></li>
+                <li class="mr-10"><a href="#" class="text-cw-grey-800 font-bold hover:text-cw-blue-600 hover:underline py-2 md:py-0 inline-block">Travel</a></li>
+                <li class="mr-10"><a href="#" class="text-cw-grey-800 font-bold hover:text-cw-blue-600 hover:underline py-2 md:py-0 inline-block">Music</a></li>
+                <li class="mr-10"><a href="#" class="text-cw-grey-800 font-bold hover:text-cw-blue-600 hover:underline py-2 md:py-0 inline-block">Technology</a></li>
+                <li class="mr-10"><a href="#" class="text-cw-grey-800 font-bold hover:text-cw-blue-600 hover:underline py-2 md:py-0 inline-block">Business</a></li>
             </ul>
-            <ul class="flex">
+            <ul class="flex pt-3">
                 <li class="mr-8">
                     <a href="#">
                         <svg class="fill-current w-6 h-6 hover:text-twitter-blue" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,6 +159,20 @@
             </ul>
         </div><!-- .container mx-auto max-w-6xl px-5 flex justify-between -->
     </footer>
+    <script>
+        const navMenu = document.querySelector('.navMenu-js');
+        const menuBtn = document.querySelector('.menuBtn-js');
+        const closeBtn = document.querySelector('.closeBtn-js');
+
+        function toggleDropDown() {
+            navMenu.classList.toggle('hidden');
+            menuBtn.classList.toggle('hidden');
+            closeBtn.classList.toggle('hidden');
+        }
+
+        menuBtn.addEventListener('click', toggleDropDown);
+        closeBtn.addEventListener('click', toggleDropDown);
+    </script>
 </body>
 
 </html>
