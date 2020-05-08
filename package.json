@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss css/build/main.css -o css/prod/main.css"
+    "build:css": "postcss css/build/main.css -o css/prod/main.css",
+    "prod:css": "NODE_ENV=production postcss css/build/main.css -o css/prod/main.min.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.7.6",
-    "postcss-cli": "^7.1.0",
-    "tailwindcss": "^1.2.0"
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.5"
   }
 }
